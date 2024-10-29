@@ -1,0 +1,19 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
+
+.treasure-enter {
+    opacity: 0.01;
+  }
+  
+  .treasure-enter.treasure-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  
+  .treasure-leave {
+    opacity: 1;
+  }
+  
+  .treasure-leave.treasure-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+  }

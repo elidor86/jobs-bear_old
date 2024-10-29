@@ -1,0 +1,14 @@
+
+.keywordInputIcon {
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    margin-left: 11px;
+}
+
+.InputIcon {
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    margin-left: 11px;
+}

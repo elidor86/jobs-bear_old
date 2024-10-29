@@ -1,0 +1,28 @@
+
+.headerLogo {
+    display: inline-block;
+    margin-right: 4px;
+
+    height: 35px;
+    width: 35px;
+}
+
+@media (max-width: 500px) {
+
+
+    .headerLogo {
+        height: 24px;
+        width: 24px;
+    }
+
+}
+
+.headerLogoText {
+    display: inline-block;
+}
+
+.searchBtnIcn{
+    margin-right: 6px;
+    width: 18px;
+    height: 18px;
+}

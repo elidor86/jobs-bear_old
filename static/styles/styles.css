@@ -1,0 +1,267 @@
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    display: block;
+    position: relative;
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #EFF1F9;
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+}
+
+body button,
+body input {
+    outline: none !important;
+    font-family: Lato;
+}
+
+body button,
+body input,
+body a {
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    border: none;
+}
+
+.mobile {
+    display: none !important;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.desktop {
+    display: flex !important;
+}
+
+@media (max-width: 1152px) {
+    .mobile {
+        display: flex !important;
+    }
+    .desktop {
+        display: none !important;
+    }
+}
+
+._loading_overlay_wrapper--active {
+    overflow: hidden !important;
+    height: 100vh;
+}
+
+.no-overflow {
+    overflow: hidden !important;
+    position: fixed;
+    height: 100%;
+}
+
+.bottom-hidden {
+    max-height: 330px;
+}
+
+@media (max-width: 1152px) {
+    .bottom-hidden {
+        margin-bottom: 500px;
+    }
+}
+
+input {
+    -webkit-user-select: text;
+}
+
+.page-title-bold {
+    font-weight: bold;
+}
+
+.page-title-change-btn {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+.jobContainerCloseBtnList {
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 7px;
+    z-index: 5555;
+}
+
+.jobContainerShareBtnList {
+    position: absolute;
+    top: 1px;
+    right: 28px;
+    width: 25px;
+    height: 30px;
+    text-align: center;
+    padding: 0px 5px;
+    z-index: 5555;
+    padding-top: 7px;
+}
+
+.example-enter {
+    opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+    opacity: 1;
+}
+
+.example-leave.example-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+.m-checkbox {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+
+.m-checkbox__label {
+    flex-shrink: 0;
+    padding: .5rem 1rem;
+    color: #fff; /* Replaced $checkbox__label__color */
+    cursor: pointer;
+}
+
+.m-checkbox__input {
+    position: relative;
+    flex-shrink: 0;
+    width: 20px; /* Replaced $checkbox__size */
+    height: 20px; /* Replaced $checkbox__size */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    background: #252224; /* Replaced $color__back */
+    cursor: pointer;
+    border: 2px solid #5dceee; /* Replaced $checkbox__border__size and $checkbox__border__color */
+}
+
+.react-autosuggest__input {
+    margin-right: 10px;
+    border-radius: 5px;
+    position: relative;
+    background: #ffffff;
+    width: 330px;
+    border: none;
+    padding-left: 45px;
+    padding-right: 11px;
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 46px;
+
+}
+
+.react-autosuggest__input::placeholder,
+.react-autosuggest__input::-webkit-input-placeholder,
+.react-autosuggest__input::-moz-placeholder {
+    color: #606fc7;
+    font-size: 16px;
+}
+
+@media (max-width: 1152px) {
+    .react-autosuggest__input {
+        width: 100%;
+    }
+}
+
+.react-autosuggest__container {
+    width: 100%;
+}
+
+.react-autosuggest__suggestions-container--open {
+    background-color: white;
+    max-width: 330px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid #5c6ac4;
+    z-index: 10000;
+    width: 100%;
+}
+
+.react-autosuggest__suggestions-container {
+    display: block;
+    position: absolute;
+    top: 43px;
+}
+
+.react-autosuggest__suggestions-list {
+    padding-inline-start: 0px;
+    padding-inline-end: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.react-autosuggest__suggestion {
+    font-size: 14px;
+    line-height: 17px;
+    color: #606fc7;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 6, 57, 0.1);
+}
+
+.react-autosuggest__suggestion > div {
+    padding-left: 16px;
+}
+
+.react-autosuggest__suggestion--highlighted {
+    font-weight: bold;
+}
+
+/* Additional classes */
+.location-input {
+}
+
+.location-input-results {
+}
+
+.location-input-results-focus {
+}
+
+.searchModalForm {
+    display: flex;
+    height: 100%;
+    padding: 0px 14px;
+}
+
+.no-min-width {
+    min-width: 0px;
+}
+
+.LinesEllipsis-ellipsis{
+    color: #5C6AC4;
+}
+
+.ReactModal__Overlay{
+    max-width: 100vw;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}

@@ -1,0 +1,40 @@
+.mainContainer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 55px;
+    background: #000639;
+    z-index: 5555555;
+}
+
+.text {
+    color: #FFFFFF;
+    font-size: 12px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    bottom: 4px;
+    right: 60px;
+}
+
+.text a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.text a:visited {
+    color: #FFFFFF;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 4px;
+    cursor: pointer;
+    right: 4px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    padding-top: 5px;
+}

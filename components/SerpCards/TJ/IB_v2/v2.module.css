@@ -1,0 +1,93 @@
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+    gap: 18px;
+    max-width: 600px;
+    background: #ffffff;
+    border-radius: 18px;
+    flex: none;
+}
+
+.cardImage {
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+}
+
+.title {
+
+    color: #3cbf0a;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.bold {
+    font-size: 18px;
+    width: 75px;
+    height: 17px;
+}
+
+.cardImg {
+    background: #ffffff;
+    width: 70%;
+}
+
+.content {
+
+    width: 100%;
+
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+.buttonsRow {
+    display: flex;
+    gap: 18.58px;
+}
+
+.buttonsCol {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.buttons {
+    background: #3cbf0a;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    padding: 0px 19px;
+    gap: 14px;
+    width: 120px;
+    height: 28px;
+    text-transform: capitalize;
+}
+
+.registerLink {
+    color: #3cbf0a;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    line-break: 2;
+    text-decoration-line: underline;
+}
+
+

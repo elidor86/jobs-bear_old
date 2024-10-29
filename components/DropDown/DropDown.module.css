@@ -1,0 +1,44 @@
+.main-container {
+    position: relative;
+    width: 100%;
+
+}
+
+.drop-down-container {
+    position: relative;
+    background: white;
+    color: #5C6AC4;
+    border-radius: 5px;
+    height: 43px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 2.7;
+}
+
+.drop-down-arrow-down {
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    top: 8px;
+}
+
+.options-container {
+
+    position: relative;
+    background: white;
+    border: 2px solid #5C6AC4;
+    border-radius: 0px 0px 5px 5px;
+    width: 100%;
+}
+
+.options-item {
+    position: relative;
+    height: 40px;
+    color: #606FC7;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 2.5;
+    border: 1px solid rgba(0, 6, 57, 0.1);
+}

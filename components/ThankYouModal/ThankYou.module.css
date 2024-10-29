@@ -1,0 +1,106 @@
+
+.modalContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0006398f;
+    z-index: 100000;
+    overflow: scroll;
+    padding: 0 20px;
+    max-width: 100vw;
+}
+
+.modalTop {
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.modalWrapper {
+    margin-top: 200px;
+    max-width: 600px;
+    min-width: 320px;
+
+
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+
+    border-radius: 10px;
+
+    padding: 20px 20px;
+}
+
+
+.modalContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    width: 50px;
+    z-index: 1000000;
+    height: 50px;
+    text-align: center;
+}
+
+.close-btn img {
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+.topImageContainer {
+    text-align: center;
+}
+
+.topImageContainer img {
+    width: 150px;
+    margin-top: -130px;
+}
+
+.text1 {
+    color: #152273;
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.text2 {
+    margin-top: 20px;
+    color: #625C80;
+    font-family: Lato;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: center;
+}
+
+.ctaButton {
+
+    margin-top: 20px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #FE77B4 0%, #7373E5 100%);
+    height: 60px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 2;
+    text-align: center;
+
+}

@@ -1,0 +1,77 @@
+.toggleSwitch {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 10px 0; /* Padding to vertically center the switch */
+}
+
+.toggleSwitchLabel {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #ccc;
+    transition: background-color 0.2s;
+    height: 34px; /* Height as per your design */
+    line-height: 34px;
+    text-align: center;
+}
+
+.toggleSwitchInner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.2s ease-in-out;
+    line-height: 34px;
+}
+
+.toggleSwitchInner:before,
+.toggleSwitchInner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 34px;
+    line-height: 34px;
+    font-weight: bold;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.toggleSwitchInner:before {
+    content: 'Yes';
+    background-color: #60d192; /* Green for 'Yes' */
+    padding-left: 20%; /* Adjust as needed */
+}
+
+.toggleSwitchInner:after {
+    content: 'No';
+    background-color: #f44336; /* Red for 'No' */
+    padding-right: 20%; /* Adjust as needed */
+    text-align: left;
+}
+
+.toggleSwitchSwitch {
+    display: block;
+    width: 22px; /* Adjust as per your design */
+    height: 22px; /* Adjust as per your design */
+    margin: 6px; /* Adjust for vertical centering */
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50%; /* Start at the middle for 'No' */
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.toggleSwitchCheckbox:checked + .toggleSwitchLabel .toggleSwitchInner {
+    margin-left: 0;
+}
+
+.toggleSwitchCheckbox:checked + .toggleSwitchLabel .toggleSwitchSwitch {
+    right: calc(100% - 28px); /* Moves to the left, adjust as needed */
+}
+
+.toggleSwitchCheckbox:checked + .toggleSwitchLabel {
+    background-color: #ccc; /* Optional: Change if you want the background to change on check */
+}

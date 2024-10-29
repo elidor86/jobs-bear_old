@@ -16,9 +16,10 @@ export const insertAdCardAtIndexes = (index, jobListLength) => {
 };
 
 // Function to determine decoration for the job card
-export const getCardDecoration = (index, jobListLength, jobTitle, jobSrc, decorationType) => {
+export const getCardDecoration = ({index, jobListLength, jobTitle, jobSrc, decorationType, company}) => {
     const decorations = ['noExperience', 'immediateStart', 'highSalary'];
     let cardDecoration = 'plain';
+
 
     if (decorationType) {
         switch (decorationType) {
@@ -27,13 +28,13 @@ export const getCardDecoration = (index, jobListLength, jobTitle, jobSrc, decora
             case 'randomTagsWithCPACards':
             case 'randomTagsSortedByLocation':
                 // Logic to apply specific decorations based on index, jobTitle, or jobSrc
-                if (jobSrc === 'serp') {
+
+                if (company === 'Lyft') {
+
+                } else if (jobSrc === 'serp') {
                     cardDecoration = 'serp';
-                } else if (jobListLength < 4 && index === 1 ||
-                    jobListLength >= 4 && (index === 1 || index % 2 === 0)) {
-                    cardDecoration = decorations[
-                    parseInt(jobTitle.replace(/\s/g, ''), 36) % decorations.length
-                        ];
+                } else if (jobListLength < 4 && index === 1 || jobListLength >= 4 && (index === 1 || index % 2 === 0)) {
+                    cardDecoration = decorations[parseInt(jobTitle.replace(/\s/g, ''), 36) % decorations.length];
                 }
                 break;
             // The original switch case did not have a default case, but it could be added if needed:

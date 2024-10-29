@@ -1,4 +1,4 @@
-import Job from "./Job";
+import Job_oldV2 from "./Job_oldV2";
 import styled from "styled-components";
 
 import DisplayAd from "../DisplayAd/DisplayAd";
@@ -431,7 +431,7 @@ export default class JobList extends React.Component {
                     try {
 
                         jobList.push(
-                            <Job
+                            <Job_oldV2
                                 job={jobs[0]}
                                 app={this.props.app}
                                 display={true}
@@ -485,7 +485,7 @@ export default class JobList extends React.Component {
                 } else {
 
                     jobList.push(
-                        <Job
+                        <Job_oldV2
                             job={jobs[0]}
                             app={this.props.app}
                             index={index}
@@ -699,15 +699,6 @@ export default class JobList extends React.Component {
 
             if (window.ClientVars.didLb != true && window.AB.lb == true) {
 
-                fetch("/updateSession", {
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    method: "POST",
-                    body: JSON.stringify({
-                        didLb: true
-                    })
-                });
 
 
                 logEvent("lb");

@@ -1,0 +1,54 @@
+.JobDecorationLabelTopLeft {
+    display: inline-block;
+    margin-right: auto;
+    margin-bottom: 11px;
+}
+
+
+.job_benefits {
+
+
+
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.job_benefit {
+    display: inline-block;
+    align-items: center;
+    margin-right: 4px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    color: rgba(0, 6, 57, 0.6);
+    font-size: 13px;
+    padding: 4px 8px;
+}
+
+
+.job-benefits ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.job-benefits li {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    color: rgba(0, 6, 57, 0.6);
+    display: flex;
+    align-items: center;
+}
+
+.benefit-icon {
+    color: #4caf50;
+    font-size: 18px;
+    margin-right: 4px;
+}

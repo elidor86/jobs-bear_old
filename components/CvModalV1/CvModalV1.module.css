@@ -1,0 +1,489 @@
+
+.main-wrapper-container {
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #EFF1F9;
+    padding-bottom: 55px;
+}
+
+.main-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #EFF1F9;
+    padding: 0px 0px;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+}
+
+.main-job-container {
+
+    position: relative;
+    background: white;
+    cursor: default;
+    box-sizing: border-box;
+
+
+}
+
+.main-job-header img {
+
+    position: absolute;
+    left: 10px;
+    top: 9px;
+
+}
+
+.main-job-content-container {
+    position: relative;
+    padding: 15px 15px;
+
+}
+
+.main-job-tile {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+}
+
+.main-job-desc-container {
+    position: relative;
+    font-size: 16px;
+    color: rgba(0, 6, 57, 0.6);
+}
+
+.main-job-desc-container p:first-child {
+    margin-top: 0px;
+}
+
+.main-job-desc-hidder {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+
+    /* Use a standard linear gradient. The vendor prefixes are no longer needed in modern browsers. */
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background-repeat: repeat-x;
+}
+
+.main-job-company {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000639;
+    opacity: 0.4;
+    margin-bottom: 10px;
+}
+
+.main-job-desc {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(0, 6, 57, 0.6);
+    margin-bottom: 20px;
+    line-height: 1.6;
+
+}
+
+.main-job-desc ul {
+    padding-left: 25px;
+}
+
+.main-job-stars {
+    color: #FFB729;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+
+.stickyWrapper {
+    max-width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background: #5C6AC4;
+    width: 100%;
+    max-width: 477px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nameInputContainerInput {
+    background: #FFFFFF;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    height: 46px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+.nameInputContainerInput input {
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+}
+
+
+.cvContainer {
+    position: relative;
+    margin-top: 20px;
+}
+
+.cvContainerLabel {
+    position: relative;
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.cvContainerLabel span {
+    color: #FE909C;
+    font-weight: bold;
+}
+
+.cvContainerInput {
+    background: #FFFFFF;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    height: 46px;
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.cvInnerContainer {
+    position: relative;
+    color: #5D6CC5;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 2.5;
+}
+
+.cvInnerContainer img {
+    position: relative;
+    display: inline-block;
+    top: 5px;
+    margin-right: 5px;
+}
+
+
+.coverLetterContainer {
+    position: relative;
+    margin-top: 20px;
+}
+
+.coverLetterContainerLabel {
+    position: relative;
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.coverLetterContainerLabel span {
+    color: #FE909C;
+    font-weight: bold;
+}
+
+
+.coverLetterContainerText {
+    background: #FFFFFF;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+
+    width: 100%;
+    margin-top: 5px;
+
+}
+
+.coverLetterContainerText textarea {
+    height: 200px;
+    width: 100%;
+    border: none;
+}
+
+
+.fileUploadInput {
+    visibility: hidden;
+    display: none;
+}
+
+.coverLetterTextArea {
+
+}
+
+.haveFile {
+    position: relative;
+    display: inline-block;
+    top: 3px !important;
+    margin-right: 10px !important;
+}
+
+
+
+
+
+.modalContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0006398f;
+    z-index: 100000;
+    overflow: scroll;
+}
+
+.modalTop {
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
+    padding: 0px 16px 0px 16px;
+}
+
+.modalWrapper {
+    margin-top: 60px;
+    max-width: 370px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background: #5C6AC4;
+
+    border-radius: 10px;
+
+}
+
+@media (max-width: 360px) {
+    .modalWrapper {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    .modalWrapper {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}
+
+.oneTapContianer {
+    position: relative;
+    max-width: 100%;
+}
+
+.footer {
+    padding: 5px 25px;
+    position: relative;
+
+    background: #EFF1F9;
+    color: rgb(143, 147, 172);
+    font-size: 11px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* margin-top: 25px; */
+}
+
+.modalContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 3px;
+    right: 1px;
+    width: 32px;
+    z-index: 1000000;
+    height: 32px;
+    text-align: center;
+}
+
+.close-btn img {
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+.text1 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    top: 30px;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.text2 {
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: 35px;
+    text-align: center;
+    position: relative;
+    max-width: 330px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.email-input-container {
+    padding-top: 10px;
+    max-width: 330px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.phone-input-container input {
+    border-radius: 5px;
+    position: relative;
+    background: #FFFFFF;
+    /* min-width: 328px; */
+    width: 100%;
+    border: none;
+    padding-left: 45px;
+    padding-right: 11px;
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 46px;
+    padding-bottom: 4px;
+}
+
+
+
+.first-name-input-container img {
+    max-width: 31px;
+    margin-left: 9px;
+}
+
+.email-input-container img {
+    margin-left: 15px;
+}
+
+.phone-input-container img {
+    margin-left: 10px;
+    max-width: 30px;
+}
+
+.continue-container {
+    padding-top: 10px;
+
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    text-align: center;
+
+}
+
+.continue-btn {
+
+    width: 100%;
+    height: 46px;
+    background: linear-gradient(98.58deg, #FE909C 0.65%, #FF6C98 96.18%);
+    box-shadow: 0px 4px 4px rgba(0, 6, 57, 0.12);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    display: inline-block;
+    line-height: 2.7;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.continue-btn img {
+
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
+}
+
+.keyword-input-container > div > div {
+    width: 100%;
+}
+
+.location-input-container {
+    padding-top: 10px;
+    max-width: 330px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.email-input-container input::placeholder {
+    font-weight: 400;
+    color: #5C6AC4;
+}
+
+.phone-input-container input::placeholder {
+    font-weight: 400;
+    color: #5C6AC4;
+}
+
+.first-name-input-container input::placeholder {
+
+    font-weight: 400;
+    color: #5C6AC4;
+    /* line-height: 2.2; */
+
+}
+
+.location-input-container > div > div {
+    width: 100%;
+}
+
+.secure {
+    position: relative;
+    text-align: center;
+    color: #5C6AC4;
+    font-size: 14px;
+    padding-top: 2px;
+    padding-bottom: 8px;
+}
+
+.secure img {
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+    top: 2px;
+
+}
+
+

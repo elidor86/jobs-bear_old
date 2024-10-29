@@ -1,0 +1,328 @@
+.main-wrapper-container {
+
+    position: relative;
+    width: 100%;
+
+    background: #EFF1F9;
+
+    max-width: 500px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 17px;
+    right: 5px;
+    width: 32px;
+    z-index: 1000000;
+    height: 32px;
+    text-align: center;
+}
+
+.close-btn img {
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+.main-wrapper {
+
+    position: relative;
+    width: 100%;
+
+    background: #EFF1F9;
+
+    padding: 10px 10px;
+
+    max-width: 500px;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-job-container {
+
+    position: relative;
+    background: white;
+    cursor: default;
+    box-sizing: border-box;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.main-job-header img {
+
+    position: absolute;
+    left: 10px;
+    top: 9px;
+
+}
+
+.main-job-content-container {
+    position: relative;
+    padding: 20px 16px;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.main-job-tile {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.main-job-desc-container {
+    position: relative;
+
+}
+
+.main-job-desc-container p:first-child {
+    margin-top: 0px;
+}
+
+.main-job-desc-hidder {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+
+    /* Use a standard linear gradient. The vendor prefixes are no longer needed in modern browsers. */
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background-repeat: repeat-x;
+}
+
+.main-job-company {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000639;
+
+    margin-bottom: 0px;
+}
+
+.main-job-location {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000639;
+
+    margin-bottom: 10px;
+}
+
+.main-job-desc {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(0, 6, 57, 0.6);
+    margin-bottom: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    transition: max-height 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.questionContainer {
+    opacity: 1;
+    max-height: 400px; /* Assume 300px is greater than the content's natural height */
+    transition: opacity 0.4s cubic-bezier(0.4, 0.0, 0.2, 1), max-height 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.hidden {
+    opacity: 0;
+    max-height: 0;
+}
+
+.main-job-stars {
+    color: #FFB729;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.main-job-stars img {
+    position: absolute;
+    left: 0px;
+    top: 2px;
+}
+
+.main-job-social-container {
+    position: relative;
+    margin-top: 30px;
+
+}
+
+.main-job-social-people {
+    display: inline-block;
+    position: relative;
+}
+
+.mail-job-social-poeople-text1 {
+    color: #000639;
+    display: inline-block;
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    top: -13px;
+    padding-left: 10px;
+
+}
+
+.email-optin-container {
+    position: relative;
+    margin-top: 16px;
+    padding: 10px 10px;
+
+    background: #5C6AC4;
+    border-radius: 5px;
+
+}
+
+.email-optin-text1 {
+    text-align: center;
+    position: relative;
+
+    font-weight: bold;
+    font-size: 22px;
+
+    font-family: Lato;
+    font-style: normal;
+
+    color: #FFFFFF;
+}
+
+.email-optin-text2 {
+
+    margin-top: 15px;
+    text-align: center;
+    position: relative;
+
+    color: #FFFFFF;
+
+    font-weight: 500;
+    font-size: 16px;
+
+    font-family: Lato;
+    font-style: normal;
+}
+
+.email-input-container {
+    margin-top: 20px;
+    position: relative;
+    height: 46px;
+
+    box-shadow: 0px 4px 4px rgba(0, 6, 57, 0.12);
+    border-radius: 5px;
+    background: #FFFFFF;
+
+
+}
+
+.email-input-container input::placeholder {
+
+    font-weight: 400;
+    color: #5C6AC4;
+
+}
+
+.email-input-container input {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.continue-container {
+    margin-top: 10px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    text-align: center;
+
+}
+
+.continue-btn {
+
+    width: 100%;
+    height: 46px;
+    background: linear-gradient(98.58deg, #FE909C 0.65%, #FF6C98 96.18%);
+    box-shadow: 0px 4px 4px rgba(0, 6, 57, 0.12);
+    border-radius: 5px;
+
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    display: inline-block;
+    line-height: 2.7;
+    cursor: pointer;
+}
+
+.continue-btn img {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
+}
+
+.continue-to-job-btn {
+    position: relative;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    color: #5c6ac4;
+    cursor: pointer;
+    background: none;
+    margin-bottom: 20px;
+}
+
+.toc {
+    color: rgba(0, 6, 57, 0.4);
+    font-weight: normal;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.q-container {
+
+    border-radius: 5px;
+    padding: 10px 10px;
+    position: relative;
+    margin-top: 16px;
+    background: #5C6AC4;
+
+}
+
+
+.q-drop-down-container {
+    margin-top: 13px;
+    margin-bottom: 10px;
+
+}
+
+.q-text1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+} 

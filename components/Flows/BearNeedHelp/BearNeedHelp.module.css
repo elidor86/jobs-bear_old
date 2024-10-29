@@ -1,0 +1,203 @@
+.modalContainer {
+    position: fixed;
+    top: 0;
+    max-width: 100vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(52, 58, 92, 0.72);
+    z-index: 100000;
+    overflow: scroll;
+    text-align: center;
+}
+
+.modalWrapper {
+
+    max-width: 320px;
+
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 10px 10px 10px 10px;
+
+    background: #FEFEFE;
+    border-radius: 14px;
+
+    top: -50px;
+
+}
+
+
+.modalWrapper:after {
+    content: " ";
+    position: absolute;
+    right: calc(50% - 20px);
+    bottom: -15px;
+    border-top: 15px solid #ffffff;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: none;
+}
+
+.closeBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    z-index: 1000000;
+    height: 32px;
+    text-align: center;
+}
+
+.text1 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 25px;
+    color: #000000;
+    margin-top: 50px;
+    text-align: center;
+    max-width: 230px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.text2 {
+
+    font-weight: 600;
+    font-size: 15px;
+    color: #000000;
+    margin-top: 10px;
+    text-align: center;
+    max-width: 230px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.text3 {
+
+
+    font-size: 15px;
+    color: #000000;
+
+    text-align: center;
+    max-width: 230px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    margin-top: 20px;
+
+}
+
+.progressBar {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.progressBarNum {
+    position: absolute;
+    font-size: 40px;
+    color: #FFFFFF;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    display: block;
+
+}
+
+.mainCta {
+    background: linear-gradient(270deg, #FE8E9C 0%, #FF6C98 96.89%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 225px;
+    line-height: 32px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+
+.msgContainer {
+    position: absolute;
+    left: 0;
+    width: 300px;
+    bottom: 50px;
+    height: 55px;
+    background: linear-gradient(264.37deg, #5866BF 28.16%, #354392 70.69%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 16px 16px 0px;
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 18px;
+    padding-left: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.notif {
+    position: absolute;
+    top: -10px;
+    right: 50px;
+
+    width: 32px;
+    height: 32px;
+    border-radius: 40px;
+    text-align: center;
+    background: #F80C0C;
+    line-height: 30px;
+}
+
+.bearContainer {
+    position: absolute;
+    bottom: -6px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+.bear {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.msgCloseBtn {
+    position: absolute;
+    top: 4px;
+    right: 15px;
+    z-index: 5555;
+
+}
+
+
+@media (max-width: 360px) {
+    .modalWrapper {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+
+}
+

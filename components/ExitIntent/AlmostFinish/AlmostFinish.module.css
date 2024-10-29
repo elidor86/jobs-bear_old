@@ -1,0 +1,118 @@
+.modalContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(120, 119, 119, 0.56);
+    z-index: 100000;
+    overflow: scroll;
+}
+
+.modalWrapper {
+    margin-top: 70px;
+    max-width: 370px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background: #000639;
+
+    border-radius: 25px;
+
+    padding: 10px 10px 10px 10px;
+
+
+}
+
+.closeBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    z-index: 1000000;
+    height: 32px;
+    text-align: center;
+}
+
+.text1 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-top: 80px;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.progressBar {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.progressBarNum {
+    position: absolute;
+    font-size: 40px;
+    color: #FFFFFF;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    display: block;
+
+}
+
+.mainCta {
+    background: linear-gradient(93.96deg, #FFA4B2 25.28%, #FF6C98 69.82%);
+    border-radius: 15px;
+    height: 58px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 250px;
+    line-height: 55px;
+    margin-top: 30px;
+}
+
+.text2 {
+
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+
+    text-align: center;
+    max-width: 200px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    margin-top: 20px;
+    padding-bottom: 80px;
+}
+
+@media (max-width: 360px) {
+    .modalWrapper {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    .modalWrapper {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}
+

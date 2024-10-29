@@ -1,0 +1,116 @@
+.modalContainer {
+    position: fixed;
+    max-width: 100vw;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(120, 119, 119, 0.56);
+    z-index: 100000;
+    overflow: scroll;
+}
+
+.modalWrapper {
+    margin-top: 70px;
+    max-width: 370px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(180deg, #6573C4 0%, #334190 100%);
+
+    border-radius: 25px;
+
+
+}
+
+.closeBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    z-index: 1000000;
+    height: 32px;
+    text-align: center;
+}
+
+.text1 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 250px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.text2 {
+    text-transform: capitalize;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 250px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    margin-top: 10px;
+}
+
+.contentContainer {
+    position: relative;
+    background: #000639;
+    border-radius: 25px;
+    margin-top: -20px;
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.hero {
+    position: relative;
+    z-index: 12;
+    text-align: center;
+}
+
+.cta {
+    background: linear-gradient(91.79deg, #FE899B 15.75%, #FF6C98 87.81%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    height: 32px;
+    color: #FFFFFF;
+    font-size: 14px;
+    max-width: 220px;
+    line-height: 30px;
+    padding-left: 20px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    margin-top: 20px;
+}
+
+.cta span {
+    position: absolute;
+    right: 10px;
+    top: 2px;
+}
+
+@media (max-width: 360px) {
+    .modalWrapper {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    .modalWrapper {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}
+

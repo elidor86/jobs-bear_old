@@ -1,0 +1,41 @@
+.FeatureContainer {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.imgContainer {
+    position: relative;
+    width: 125px;
+    margin: 0px 10px;
+    min-height: 175px;
+}
+
+.imgContainer img {
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.txtContainer {
+    position: relative;
+    text-align: left;
+
+}
+
+.title {
+    color: #152273;
+    font-family: Lato;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 26px;
+    margin-bottom: 5px;
+}
+
+.body {
+    color: #625C80;
+    font-family: Lato;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 26px;
+}

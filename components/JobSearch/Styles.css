@@ -1,0 +1,95 @@
+.react-autosuggest__input {
+    margin-right: 10px;
+    border-radius: 5px;
+    position: relative;
+    background: #ffffff;
+    width: 330px;
+    border: none;
+    padding-left: 45px;
+    padding-right: 11px;
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 46px;
+
+}
+
+.react-autosuggest__input::placeholder,
+.react-autosuggest__input::-webkit-input-placeholder,
+.react-autosuggest__input::-moz-placeholder {
+    color: #606fc7;
+    font-size: 16px;
+}
+
+@media (max-width: 1152px) {
+    .react-autosuggest__input {
+        width: 100%;
+    }
+}
+
+.react-autosuggest__container {
+    width: 100%;
+}
+
+.react-autosuggest__suggestions-container--open {
+    background-color: white;
+    max-width: 330px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid #5c6ac4;
+    z-index: 10000;
+    width: 100%;
+}
+
+.react-autosuggest__suggestions-container {
+    display: block;
+    position: absolute;
+    top: 43px;
+}
+
+.react-autosuggest__suggestions-list {
+    padding-inline-start: 0px;
+    padding-inline-end: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.react-autosuggest__suggestion {
+    font-size: 14px;
+    line-height: 17px;
+    color: #606fc7;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 6, 57, 0.1);
+}
+
+.react-autosuggest__suggestion > div {
+    padding-left: 16px;
+}
+
+.react-autosuggest__suggestion--highlighted {
+    font-weight: bold;
+}
+
+/* Additional classes */
+.location-input {
+}
+
+.location-input-results {
+}
+
+.location-input-results-focus {
+}
+
+.searchModalForm {
+    display: flex;
+    height: 100%;
+    padding: 0px 14px;
+}
+
+.no-min-width {
+    min-width: 0px;
+}

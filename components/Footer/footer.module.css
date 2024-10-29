@@ -1,0 +1,105 @@
+
+.SocialIcon {
+    margin-left: 12px;
+    box-sizing: border-box;
+    width: 30px;
+    display: inline-block;
+}
+
+.FooterDiv {
+    background: linear-gradient(175.6deg, #5c6ac4 0%, #202e78 100%);
+    min-height: 120px;
+    font-family: Lato;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 11px 16px;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+.MenuDiv{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MenuItem{
+    cursor: pointer;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    margin-right: 40px;
+    color: #ffffff;
+    box-sizing: border-box;
+
+}
+
+.MenuItem:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.SocialIconLink{
+    cursor: pointer;
+}
+
+.RightsDiv{
+    display: flex;
+    flex-direction: row;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+
+
+.RightsSpan{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ffffff;
+}
+
+
+
+@media (max-width: 1000px) {
+    .RightsDiv{
+        padding-top: 16px;
+    }
+
+    .SocialIcon {
+        width: 30px;
+    }
+
+    .FooterDiv {
+        align-items: center;
+    }
+
+    .MenuDiv{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .MenuItem{
+        padding-bottom: 16px;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
+
+    .SocialIconsDiv{
+        box-sizing: border-box;
+    }
+
+    .MenuLinkDiv{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

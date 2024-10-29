@@ -1,0 +1,247 @@
+@import './variables';
+@import '~bootstrap/scss/bootstrap-grid.scss';
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #EFF1F9;
+
+  button, input {
+    outline: none !important;
+    font-family: Lato;
+  }
+
+  button, input, a {
+    -webkit-touch-callout: none;
+    // -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    border: none;
+  }
+
+}
+
+.mobile {
+  display: none !important;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.desktop {
+  display: flex !important;
+}
+
+@media (max-width: 1152px) {
+  .mobile {
+    display: flex !important;
+  }
+
+  .desktop {
+    display: none !important;
+  }
+}
+
+._loading_overlay_wrapper--active {
+  overflow: hidden !important;
+  height: 100vh;
+}
+
+.no-overflow {
+  overflow: hidden !important;
+  // position: relative;
+  position: fixed;
+  height: 100%;
+}
+
+.bottom-hidden {
+  max-height: 330px;
+  @media (max-width: 1152px) {
+    margin-bottom: 500px;
+  }
+
+}
+
+input {
+  -webkit-user-select: text;
+}
+
+
+.page-title-bold {
+  font-weight: bold;
+}
+
+.page-title-change-btn {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+.jobContainerCloseBtnList {
+  position: absolute;
+  top: 0px;
+  right: 2px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding-top: 7px;
+  z-index: 5555;
+}
+
+.jobContainerShareBtnList {
+  position: absolute;
+  top: 1px;
+  right: 28px;
+  width: 25px;
+  height: 30px;
+  text-align: center;
+  padding: 0px 5px;
+  z-index: 5555;
+  padding-top: 7px;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+
+.m-checkbox {
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+
+  &__label {
+    flex-shrink: 0;
+    padding: .5rem 1rem;
+    color: $checkbox__label__color;
+    cursor: pointer;
+  }
+
+  &__input {
+    position: relative;
+    flex-shrink: 0;
+    width: $checkbox__size;
+    height: $checkbox__size;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none; // TODO: manage :focus
+    background: $color__back;
+    cursor: pointer;
+    border: $checkbox__border__size solid $checkbox__border__color;
+
+    &::before {
+      content: ' ';
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      bottom: 50%;
+      left: 50%;
+      transition: all .1s;
+      background: $checkbox__checkmark__color;
+    }
+
+    &:checked,
+    &:indeterminate {
+      &::before {
+        top: $checkbox__border__size;
+        right: $checkbox__border__size;
+        bottom: $checkbox__border__size;
+        left: $checkbox__border__size;
+      }
+    }
+
+    &:indeterminate {
+      &::before {
+        top: ($checkbox__checkmark__size / 2) - ($checkbox__checkmark__size--indeterminate / 2);
+        bottom: ($checkbox__checkmark__size / 2) - ($checkbox__checkmark__size--indeterminate / 2);
+      }
+    }
+
+    &:disabled {
+      border-color: $checkbox__border__color--disabled;
+      cursor: default;
+
+      &::before {
+        background-color: $checkbox__checkmark__color--disabled;
+      }
+
+      + .m-checkbox__label {
+        color: $checkbox__label__color--disabled;
+        cursor: default;
+      }
+    }
+  }
+
+  &--has-error {
+    &__input {
+      border-color: red;
+      background-color: rgba(red, .2);
+
+      &::before {
+        background-color: red;
+      }
+    }
+  }
+
+  &--switch {
+    &__label {
+      &::after {
+        content: 'off';
+        margin-left: .25rem;
+      }
+    }
+
+    &__input {
+      width: (2 * $switch__size) - (2 * $checkbox__border__size);
+      height: $switch__size;
+      border: $checkbox__border__size solid $checkbox__border__color--disabled;
+      border-radius: $checkbox__checkmark__size;
+
+      &::before {
+        top: $checkbox__border__size;
+        right: $switch__size - $checkbox__border__size;
+        bottom: $checkbox__border__size;
+        left: $checkbox__border__size;
+        border-radius: 50%;
+        background: $checkbox__checkmark__color--disabled;
+      }
+
+      &:checked {
+        border-color: $checkbox__border__color;
+
+        + .m-checkbox--switch__label {
+          &::after {
+            content: 'on';
+          }
+        }
+
+        &::before {
+          right: $checkbox__border__size;
+          left: $switch__size - $checkbox__border__size;
+          background: $checkbox__border__color;
+        }
+      }
+    }
+  }
+}

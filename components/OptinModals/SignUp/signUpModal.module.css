@@ -1,0 +1,280 @@
+
+.modalContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0006398f;
+    z-index: 100000;
+    overflow: scroll;
+    max-width: 100vw;
+}
+
+.modalTop {
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.modalWrapper {
+    margin-top: 80px;
+    max-width: 370px;
+    min-width: 320px;
+    /* min-height: 400px; */
+
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background: #5C6AC4;
+
+    border-radius: 10px;
+
+}
+
+.footer {
+    padding: 5px 25px;
+    position: relative;
+
+    background: #EFF1F9;
+    color: rgb(143, 147, 172);
+    font-size: 11px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* margin-top: 25px; */
+}
+
+.modalContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    width: 32px;
+    z-index: 1000000;
+    height: 32px;
+    text-align: center;
+}
+
+.close-btn img {
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+.text1 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    top: 40px;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.text2 {
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: 35px;
+    text-align: center;
+    position: relative;
+    max-width: 330px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.email-input-container {
+    padding-top: 10px;
+    max-width: 330px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.email-input-container input {
+    border-radius: 5px;
+    position: relative;
+    background: #FFFFFF;
+    min-width: 328px;
+    border: none;
+
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 46px;
+    padding-bottom: 4px;
+    text-align: center;
+}
+
+.keyword-input-container {
+    padding-top: 20px;
+    max-width: 330px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.continue-container {
+    padding-top: 10px;
+    max-width: 330px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    text-align: center;
+
+}
+
+.continue-btn {
+
+    width: 100%;
+    height: 46px;
+    background: linear-gradient(98.58deg, #FE909C 0.65%, #FF6C98 96.18%);
+    box-shadow: 0px 4px 4px rgba(0, 6, 57, 0.12);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    display: inline-block;
+    line-height: 2.7;
+}
+
+.continue-btn img {
+
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
+}
+
+.keyword-input-container > div > div {
+    width: 100%;
+}
+
+.location-input-container {
+    padding-top: 10px;
+    max-width: 330px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.email-input-container input::placeholder {
+
+    font-weight: 400;
+    color: #5C6AC4;
+    /* line-height: 2.2; */
+
+}
+
+.location-input-container > div > div {
+    width: 100%;
+}
+
+
+.orText {
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.fbLoginContainer {
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px 0px;
+    background: white;
+    text-align: center;
+    height: 46px;
+    max-width: 330px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 6, 57, 0.12);
+    border-radius: 5px;
+}
+
+.fbLoginText {
+    color: #5C6AC4;
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    margin-left: 5px;
+}
+
+.fbLoginIcon {
+    color: #5C6AC4;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+}
+
+.googlLoginContainer {
+
+    cursor: pointer;
+    padding: 10px 0px;
+    background: white;
+    text-align: center;
+    height: 46px;
+    max-width: 330px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 6, 57, 0.12);
+    border-radius: 5px;
+}
+
+.googleLoginText {
+    color: #5C6AC4;
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    margin-left: 5px;
+}
+
+.googleLoginIcon {
+    left: -10px;
+    color: #5C6AC4;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+}
+
+.noThanks {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px 10px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
